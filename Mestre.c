@@ -139,7 +139,7 @@ int verificarMissao(Jogador *jogador, Territorio *mapa, int tamanho) {
 void recompensarJogador(Jogador *jogador) {
     int bonus = (rand() % 5) + 5; // Tropas extras entre 5 e 9
     jogador->tropasTotais += bonus;
-    printf("\n🎉 MISSÃO CONCLUÍDA! Você ganhou %d tropas extras!\n", bonus);
+    printf("\n MISSÃO CONCLUÍDA! Você ganhou %d tropas extras!\n", bonus);
     printf("Tropas totais agora: %d\n", jogador->tropasTotais);
 }
 
@@ -180,10 +180,10 @@ int main() {
     Jogador jogador;
 
     printf("Digite seu nome: ");
-    scanf(" %[^\n]", jogador.nome); // ✅ Lê o nome completo com espaços
+    scanf(" %[^\n]", jogador.nome); //  Lê o nome completo com espaços
 
     printf("Escolha sua cor: ");
-    scanf(" %[^\n]", jogador.cor);  // ✅ Lê a cor completa com espaços
+    scanf(" %[^\n]", jogador.cor);  //  Lê a cor completa com espaços
 
     jogador.tropasTotais = 20; // Tropas iniciais
     jogador.missaoAceita = 0;  // Missão ainda não aceita
